@@ -5,8 +5,11 @@ const Hero = () => {
   return (
     <section >
       <div
-        className="max-w-[1920px] relative w-full h-screen flex items-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero-section-background.jpg')" }}
+        className="relative max-w-7xl mx-auto h-screen flex items-center justify-center bg-center bg-no-repeat bg-cover"
+        style={{ 
+          backgroundImage: "url('/hero-section-background.jpg')",
+          backgroundSize: "1280px auto", // fixed size
+         }}
       >
         {/* Overlay (optional, for darkening image) */}
         <div className="absolute inset-0 bg-black/40"></div>

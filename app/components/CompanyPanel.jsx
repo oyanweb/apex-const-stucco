@@ -32,7 +32,7 @@ const companies = [
   
 
   return (
-    <section className="bg-gray-200 py-10 border-b border-t border-gray-300 mb-10">
+    <section className="bg-[var(--primary)] py-10 border-b border-t border-gray-300 mb-10">
       <div className="container mx-auto flex justify-center gap-10 flex-wrap">
         {companies.map((company) => (
           <div key={company.id} className="flex flex-col items-center">

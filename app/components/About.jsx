@@ -44,10 +44,10 @@ const About = () => {
 
         {/* Text content on the right */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary)] dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-text)] dark:text-white">
             Lorem ipsum dolor sit amet
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg">
+          <p className=" text-[var(--primary-text)]  dark:text-gray-300 text-base sm:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             vehicula, urna in facilisis sagittis, metus justo venenatis purus,
             a tincidunt lacus lorem a orci.
@@ -58,10 +58,10 @@ const About = () => {
             <div className="flex gap-4 p-4 bg-gray-100 dark:bg-gray-800items-center">
               <div className="w-12 h-12 bg-gray-300 dark:bg-gray-700"></div>
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-white">
+                <h3 className="font-semibold  text-[var(--primary-text)] s dark:text-white">
                   Lorem ipsum dolor
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                <p className=" text-[var(--primary-text)]  dark:text-gray-400 text-sm">
                   Lorem ipsum dolor sit amet
                 </p>
               </div>

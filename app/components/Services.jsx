@@ -40,17 +40,17 @@ const Services = () => {
     <section className="py-16 px-0">
       {/* Section Header */}
       <div className="max-w-4xl ml-10 mb-10">
-          <p className="text-sm font-medium text-gray-500 mb-2">
+          <p className=" text-[var(--primary-text)] text-sm font-medium mb-2">
             —— Discover our projects
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary)] dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold  text-[var(--primary-text)]  dark:text-white mb-4">
             High Quality Services Of <br /> 
             Multiple Industries
           </h2>
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 w-full">
         {services.map((service, index) => (
           <Card
           key={index}

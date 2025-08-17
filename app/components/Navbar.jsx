@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#111111] select-none bg-white dark:bg-[var(--primary)] sticky top-0 z-50 backdrop-blur-md"> 
+    <nav className=" max-w-7xl  mx-auto  bg-[#111111] select-none bg-white dark:bg-[var(--primary)] sticky top-0 z-50 backdrop-blur-md"> 
     <div className=" shadow-[0_0_10px_rgba(0,0,0,0.15)] dark:border-2 dark:border-[#8B2E2E] dark:shadow-[0_0_10px_#8B2E2E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  mr-10">
         <div className="flex justify-between h-16 items-center">
