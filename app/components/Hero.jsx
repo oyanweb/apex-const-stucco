@@ -26,7 +26,7 @@ const Hero = () => {
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
             dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
           </p>
-          <button className="px-6 py-3 bg-white shadow rounded font-medium hover:bg-gray-100 transition">
+          <button className="px-6 py-3 bg-white shadow font-medium hover:bg-gray-100 transition">
             Start Project
           </button>
         </div>

@@ -8,31 +8,31 @@ const Services = () => {
   const services = [
     {
       number: "01",
-      title: "Starter Strategy",
+      title: "Exterior Wall Systems",
       description:
-        "Brand discovery, competitor audit, tone of voice, and homepage wireframe to set your foundation.",
-      image: "/service-1-stucco.jpg",
+        "Complete solutions for protection, insulation, and lasting performance.",
+      image: "/ext_walls.webp",
     },
     {
       number: "02",
-      title: "Growth Package",
+      title: "Stucco Finishes",
       description:
-        "Content mapping, CTA optimization, 5-page custom design + dev, and SEO planning for growth.",
-      image: "/service-1-stucco.jpg",
+        "Smooth, textured, and durable plaster coatings for any style.",
+      image: "/stucco.jpg",
     },
     {
       number: "03",
-      title: "Scaling Mastery",
+      title: "Stone Veneers & Masonry",
       description:
-        "Conversion-focused design, headless CMS setup, checkout optimization, and analytics reporting.",
-      image: "/service-1-stucco.jpg",
+        "Timeless beauty and strength with natural or manufactured stone.",
+      image: "/cladding.webp",
     },
     {
       number: "04",
-      title: "SEO + Optimization",
+      title: "Modern Cladding",
       description:
-        "Advanced keyword strategy, content optimization, schema setup, and ongoing performance tracking.",
-      image: "/service-1-stucco.jpg",
+        "Stylish, low-maintenance panels that enhance and protect exteriors.",
+      image: "/modern-cladding.webp",
     },
   ];
 

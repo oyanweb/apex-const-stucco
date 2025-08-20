@@ -33,8 +33,8 @@ const Footer = () => {
         </div>
 
         {/* Column 2: Useful Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">USEFUL LINKS</h3>
+        <div className="ml-6">
+          <h3 className="text-lg font-semibold mb-2">USEFUL LINKS</h3>
           <ul className="space-y-2">
             <li>
               <Link href="/">HOME</Link>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         {/* Column 3: Our Services */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">OUR SERVICES</h3>
+          <h3 className="text-lg font-semibold mb-2 ">OUR SERVICES</h3>
           <ul className="space-y-2">
             <li>EXTERIOR WALL SYSTEMS</li>
             <li>STONE & CLADDING</li>
@@ -64,16 +64,16 @@ const Footer = () => {
         {/* Column 4: Contact Info */}
         <div className="space-y-4">
           <div>
-            <p className="text-sm">Say hello!</p>
-            <p className="text-xl font-semibold">(767) 767-7676</p>
+            <p className="text-sm font-thin">Say hello!</p>
+            <p className="text-2xl font-semibold">(767) 767-7676</p>
           </div>
           <div>
-            <p className="text-sm">Say hello!</p>
-            <p className="text-base font-semibold">info@email.com</p>
+            <p className="text-sm font-thin">Say hello!</p>
+            <p className="text-xl text-base font-semibold">info@email.com</p>
           </div>
           <div>
-            <p className="text-sm">Meet Us:</p>
-            <p className="text-base font-semibold">
+            <p className="text-sm font-thin">Meet Us:</p>
+            <p className="text-base">
               Trump Pmurt Str., 999 house <br />
               planet Mars
             </p>

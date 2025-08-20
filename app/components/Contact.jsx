@@ -49,20 +49,34 @@ const Contact = () => {
 
   return (<section className="w-full relative mb-6 mt-17">
     {/* Gray background section */}
-    <div className="bg-gray-200 py-40 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    <div 
+      className="relative py-40 px-6"
+      style={{ backgroundImage: "url('/pexels-a-darmel-7642088.jpg')", 
+        backgroundSize: "1280px auto",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Content on top */}
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         <div>
-          <p className="text-xs font-semibold uppercase mb-2">Join us</p>
-          <h2 className="text-4xl font-bold mb-4">Lorem ipsum dolor sit amet</h2>
-          <p className="text-gray-700 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
-            usmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud.
+          <p className="text-xs font-semibold uppercase mb-2 text-gray-200">Join us</p>
+          <h2 className="text-white text-4xl font-bold mb-4">
+            Transforming exteriors, <br />
+            one wall at a time.
+          </h2>
+          <p className="text-white max-w-md">
+          Our team combines craftsmanship and modern systems to protect and enhance your building — residential or commercial. 
+          Tell us your project and we’ll provide a clear plan and quote.
           </p>
         </div>
       </div>
     </div>
-  
+
+    
     {/* Form card, placed separately so it's taller */}
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start -mt-105 px-6">
       <div></div> {/* empty div to keep spacing/alignment */}
@@ -71,7 +85,8 @@ const Contact = () => {
     <h3 className="text-xl font-semibold mb-6">
       Let us build your comfort
     </h3>
-
+      
+    
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         {/* Name + Email */}
@@ -85,7 +100,7 @@ const Contact = () => {
                 <FormControl>
                   <Input
                     placeholder="Name"
-                    className="bg-gray-200 rounded"
+                    className="bg-gray-200"
                     {...field}
                   />
                 </FormControl>
@@ -102,7 +117,7 @@ const Contact = () => {
                 <FormControl>
                   <Input
                     placeholder="Email"
-                    className="bg-gray-200 rounded"
+                    className="bg-gray-200"
                     {...field}
                   />
                 </FormControl>
@@ -123,7 +138,7 @@ const Contact = () => {
                 <FormControl>
                   <Input
                     placeholder="Phone"
-                    className="bg-gray-200 rounded"
+                    className="bg-gray-200"
                     {...field}
                   />
                 </FormControl>
@@ -140,7 +155,7 @@ const Contact = () => {
                 <FormControl>
                   <Input
                     placeholder="Address"
-                    className="bg-gray-200 rounded"
+                    className="bg-gray-200"
                     {...field}
                   />
                 </FormControl>
@@ -160,7 +175,7 @@ const Contact = () => {
               <FormControl>
                 <Textarea
                   placeholder="Message"
-                  className="bg-gray-200 rounded h-28"
+                  className="bg-gray-200 h-28"
                   {...field}
                 />
               </FormControl>

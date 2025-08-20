@@ -87,7 +87,7 @@ const PortfolioCarousel = () => {
         
         <div>
           <Link href="/portfolio">
-            <button className="mt-17 -mr-80 text-gray-900 dark:text-white font-medium px-6 py-2 rounded-md bg-gray-200 dark:hover:bg-gray-700 transition">
+            <button className="mt-17 -mr-80 text-gray-900 dark:text-white font-medium px-6 py-2 bg-gray-200 dark:hover:bg-gray-700 transition">
               View other projects
             </button>
           </Link>
