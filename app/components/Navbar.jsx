@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/portfolio" },
+    { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/portfolio" }, 
     { name: "Contact Us", href: "/contact" },
@@ -72,9 +72,9 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link key={item.name} href={item.href}>
-                <span className="text-lg text-[var(--primary)]  dark:text-[var(--secondary)] font-medium transition-all duration-300 relative group drop-shadow-sm">
+                <span className="text-lg text-[#000]  dark:text-[var(--secondary)] font-medium transition-all duration-300 relative group drop-shadow-sm">
                   {item.name}
-                  <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#8B2E2E] transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute left-0 bottom-0 w-0 h-1  bg-[#0B0E29] transition-all duration-300 group-hover:w-full" />
                 </span>
               </Link>
             ))} 

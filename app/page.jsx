@@ -43,9 +43,9 @@ const Home = () => {
       <About />
       <Services />
       <PortfolioCarousel/>  
-      <CompanyPanel />
-      <Testimonials />
+      {/* <CompanyPanel /> */}
       <Achievements />
+      <Testimonials />
       <Contact/>
     </div>
 

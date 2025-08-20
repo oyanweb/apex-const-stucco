@@ -44,14 +44,6 @@ const PortfolioCarousel = () => {
       image: "/service-1-stucco.jpg",
       tag: "Design",
     },
-    {
-      title: "Sample Project",
-      description:
-        "Another innovative project description goes here for demo purposes.",
-      link: "#",
-      image: "/service-1-stucco.jpg",
-      tag: "Design",
-    },
   ];
   const [api, setApi] = useState(null);  // ✅ works in JS & TS
 
@@ -73,21 +65,21 @@ const PortfolioCarousel = () => {
       {/* Section Header */}
       <div className="max-w-4xl ml-10 mb-10 flex frid-2 justify-between ">
         <div>
-          <p className="text-sm font-medium text-gray-500 mb-2">
+          <p className="text-[#FFAA17] text-sm font-medium mb-2">
             —— Discover our projects
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-text)]  dark:text-white mb-4">
-            Work Together To Create <br /> 
-            Unique Experience! 
+          Shaping Exteriors <br />
+          That Stand the Test of Time
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We bring walls to life with premium stucco, stone, and cladding solutions — designed for durability, beauty, and lasting performance.
           </p>
         </div>
         
         <div>
           <Link href="/portfolio">
-            <button className="mt-17 -mr-80 text-gray-900 dark:text-white font-medium px-6 py-2 bg-gray-200 dark:hover:bg-gray-700 transition">
+            <button className="mt-17 -mr-80 bg-[#FFAA17] font-medium px-6 py-2  dark:hover:bg-gray-700 transition">
               View other projects
             </button>
           </Link>
@@ -117,7 +109,7 @@ const PortfolioCarousel = () => {
                   <div className="absolute left-0 right-0 -bottom-16 px-5 ">
                     <div className="relative bg-white dark:bg-gray-800 shadow-md border border-gray-700 dark:border-gray-700 p-4 mt-80 h-20 flex flex-col">
                       {/* Tag */}
-                      <span className="absolute -top-4  center  border border-gray-700 bg-white dark:bg-gray-700 text-xs font-medium px-3 py-1 shadow">
+                      <span className="absolute -top-4 uppercase center  border border-gray-700 bg-[#FFAA17] dark:bg-gray-700 text-xs font-medium px-3 py-1 shadow">
                         {item.title}
                       </span>
 
@@ -136,8 +128,8 @@ const PortfolioCarousel = () => {
             </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="right-285 sm:-left-10  border-gray-700 z-50" />
-          <CarouselNext className="left-285 sm:-right-10 border-right border-gray-700" />
+          {/* <CarouselPrevious className="right-285 sm:-left-10  border-gray-700 z-50" />
+          <CarouselNext className="left-285 sm:-right-10 border-right border-gray-700" /> */}
         </Carousel>
 
         {/* Pagination dots */}

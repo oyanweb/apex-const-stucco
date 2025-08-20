@@ -47,7 +47,8 @@ const Contact = () => {
     setTimeout(() => setIsSubmitting(false), 1500);
   };
 
-  return (<section className="w-full relative mb-6 mt-17">
+  return (
+  <section className="w-full relative pb-9 bg-[#ffffff] ">
     {/* Gray background section */}
     
     <div 
@@ -63,7 +64,7 @@ const Contact = () => {
       {/* Content on top */}
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         <div>
-          <p className="text-xs font-semibold uppercase mb-2 text-gray-200">Join us</p>
+          <p className="text-xs font-semibold uppercase mb-2 text-[#FFAA17] ">Join us</p>
           <h2 className="text-white text-4xl font-bold mb-4">
             Transforming exteriors, <br />
             one wall at a time.
@@ -81,7 +82,7 @@ const Contact = () => {
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start -mt-105 px-6">
       <div></div> {/* empty div to keep spacing/alignment */}
       <div className="bg-white rounded-lg shadow-xl p-8 relative z-10">
-      <p className="text-xs font-semibold uppercase mb-2">Join us</p>
+      <p className="text-xs font-semibold uppercase  text-[#FFAA17]  mb-2">Join us now</p>
     <h3 className="text-xl font-semibold mb-6">
       Let us build your comfort
     </h3>
@@ -186,7 +187,7 @@ const Contact = () => {
 
         <Button
           type="submit"
-          className="w-full bg-gray-300 text-black font-semibold  mb-5"
+          className="w-full  bg-[#FFAA17]  hover:bg-[#e69910]  rounded-none  text-black font-semibold  mb-5"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Sending..." : "Build comfort"}

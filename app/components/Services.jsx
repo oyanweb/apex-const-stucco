@@ -40,7 +40,7 @@ const Services = () => {
     <section className="py-16 px-0">
       {/* Section Header */}
       <div className="max-w-4xl ml-10 mb-10">
-          <p className=" text-[var(--primary-text)] text-sm font-medium mb-2">
+          <p className=" text-[#FFAA17] text-sm font-medium mb-2">
             —— Discover our projects
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold  text-[var(--primary-text)]  dark:text-white mb-4">

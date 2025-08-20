@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const Achievements = () => {
-  const CountUpStat = ({ end, duration, label }) => {
+  const CountUpStat = ({ end, duration, label, suffix = "" }) => {
     const [count, setCount] = useState(0);
     const ref = useRef(null);
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -41,27 +41,24 @@ const Achievements = () => {
     }, [end, duration, hasAnimated]);
 
     return (
-      <div ref={ref} className="flex flex-col items-center">
-        <h3 className="text-4xl sm:text-5xl font-bold text-[var(--secondary)] mb-2">
-          {label.includes("Projects") || label.includes("Years")
-            ? `${count}+`
-            : `${count}%`}
+      <div ref={ref} className="flex flex-col items-center text-center">
+        <h3 className="text-sm sm:text-5xl font-semibold text-white mb-2">
+          {count}
+          {suffix}
         </h3>
-        <p className=" text-[var(--secondary)] dark:text-gray-400 text-sm sm:text-base">
-          {label}
-        </p>
+        <p className="text-gray-300 text-sm sm:text-base">{label}</p>
       </div>
     );
   };
 
   return (
-    <section className="py-16 px-4 bg-[var(--primary)]">
-      <div className="max-w-7xl mx-auto text-center">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8">
-          <CountUpStat end={150} duration={2000} label="Projects Delivered" />
-          <CountUpStat end={98} duration={2000} label="Client Satisfaction" />
-          <CountUpStat end={5} duration={2000} label="Years of Excellence" />
-          <CountUpStat end={5} duration={2000} label="Years of Excellence" />
+    <section className="py-16 px-4 bg-[#0B0E29]">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          <CountUpStat end={126} duration={2000} label="Happy Customers" suffix="+" />
+          <CountUpStat end={32} duration={2000} label="On-Going Projects" suffix="+" />
+          <CountUpStat end={50} duration={2000} label="Happy Customers" suffix="k" />
+          <CountUpStat end={50} duration={2000} label="Awards Achievement" suffix="+" />
         </div>
       </div>
     </section>

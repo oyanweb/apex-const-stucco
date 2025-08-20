@@ -154,6 +154,6 @@
 input:focus,
 textarea:focus {
   outline: none; /* remove default outline */
-  border-color: #8B2E2E !important; /* your blue color */
+  border-color: #FFAA17 !important; /* your blue color */
   box-shadow: 0 0 0 1px rgba(139, 46, 46, 0.1) !important; /* subtle blue ring */
 }

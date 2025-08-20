@@ -34,13 +34,13 @@ import { FaChevronLeft, FaChevronRight, FaQuoteLeft } from "react-icons/fa";
   
 const Testimonials = () => {
     return (
-        <section className="bg-gray-400 py-16 mt-19">
+        <section className="bg-[#EDEDED] py-16 mt-25">
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
             
             {/* Left Side */}
-            <div className="flex flex-col justify-center">
-              <h4 className="text-sm font-bold uppercase tracking-wider text-gray-700 flex items-center gap-2">
-                <span>⧉</span> Testimonials
+            <div className="flex flex-col justify-center ml-9">
+              <h4 className="text-xl font-bold uppercase tracking-wider text-[#FF6600] flex items-center gap-2">
+                <span></span> Testimonials
               </h4>
               <h2 className="mt-2 text-3xl font-bold text-gray-900">
                 Our Happy Clients <br /> Says About Us

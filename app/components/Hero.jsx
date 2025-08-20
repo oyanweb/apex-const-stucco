@@ -16,7 +16,7 @@ const Hero = () => {
 
         {/* Left content */}
         <div className="container mx-auto px-6 lg:px-20 relative z-10">
-          <h4 className="text-sm text-gray-200 mb-2">
+          <h4 className="text-white">
             Great Experience In Building
           </h4>
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">
@@ -26,7 +26,7 @@ const Hero = () => {
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
             dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
           </p>
-          <button className="px-6 py-3 bg-white shadow font-medium hover:bg-gray-100 transition">
+          <button className="px-6 py-3 bg-[#FFAA17] shadow font-medium hover:bg-gray-100 transition">
             Start Project
           </button>
         </div>
