@@ -10,14 +10,14 @@ const About = () => {
         {/* Images on the left */}
         <div className="relative w-full lg:w-1/2 hidden md:flex justify-center">
         
-        {/* <div className="border-t-6 border-black absolute flex flex-col top-17 left-85 w-27 h-30 bg-[#FBB040] dark:bg-gray-600 z-40 flex items-center justify-center text-black font-bold text-5xl text-center">
-          10+ <span className="block font-bold text-sm font-extralight text-sm font-semibold">YEARS OF EXPERIENCE</span>
-        </div> */}
+          <div className="shadow-[0_0_25px_rgba(0,0,0,0.3)] border-t-6 rounded-lg border-black absolute flex flex-col top-17 left-85 w-27 h-30 bg-[#FFAA17] text-black z-40 flex items-center justify-center font-semibold text-5xl ">
+            10+ <span className="float-left ml-5 font-bold text-sm font-extralight text-sm font-semibold">Years of experience</span>
+          </div>
           <div className="relative flex items-start">
           {/* Image container for overlap */}
           <div className="relative">
             <img
-              src="/about-section-2.jpg"
+              src="/about-section2.jpg"
               alt="About Image 1"
               className="w-84 h-94 object-cover shadow-lg z-20"
             />
@@ -25,28 +25,14 @@ const About = () => {
             <div className="absolute inset-0 bg-black/10 z-30"></div>
           </div>
 
-          {/* Image 2 lower than Image 1 */}
-          
-          <img
-            src="/about-section-1.jpg"
-            alt="About Image 2"
-            className="w-74  h-84 object-cover shadow-lg z-30 -ml-55 mt-30"
-          />
-          
-          {/* <div className="absolute top-12 left-12 w-48 h-48 bg-gray-400 dark:bg-gray-600 z-40 flex items-center justify-center text-black font-bold text-lg">
-            10+ <span className="block text-sm font-normal">Years of experience</span>
+            {/* Image 2 lower than Image 1 */}
+            
+            <img
+              src="/about-section1.jpg"
+              alt="About Image 2"
+              className="w-74  h-84 object-cover shadow-lg z-30 -ml-55 mt-30"
+            /> 
           </div>
-          <img
-            src="/about-section-1.jpg"
-            alt="About Image 1"
-            className="relative right-20 w-84 h-84 object-cover z-20 shadow-lg"
-          />
-          <img
-            src="/about-section-2.jpg"
-            alt="About Image 2"
-            className="absolute top-10 left-40 w-84 h-74 object-cover z-30  shadow-lg mt-32"
-          /> */}
-        </div>
         </div>
 
         {/* Text content on the right */}
@@ -64,7 +50,7 @@ const About = () => {
           {/* Feature boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
             {/* Box 1 */}
-            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 shadow-md">
+            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 h-30 shadow-md">
               {/* Icon with orange background */}
               <div className="relative top-1 flex items-center justify-center w-20 h-14 bg-[#FFAA17]">
                 <img
@@ -78,7 +64,7 @@ const About = () => {
 
               {/* Text */}
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white text-lg">
+                <h3 className="font-semibold text-gray-900 dark:text-white text-sm">
                   Quality services
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -88,7 +74,7 @@ const About = () => {
             </div>
 
             {/* Box 2 */}
-            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 shadow-md">
+            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6  h-30 shadow-md">
               <div className="relative top-1  flex items-center justify-center  w-20 h-14 bg-[#FFAA17]">
                 <img
                   src="/builder.png"
@@ -99,7 +85,7 @@ const About = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white text-lg">
+                <h3 className="font-semibold text-gray-900 dark:text-white text-sm">
                   Skilled developers
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -120,9 +106,9 @@ const About = () => {
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700"></div>
               <div>
-                <p className="font-semibold text-gray-800 dark:text-white">MAKTPEK</p>
+                <p className="font-semibold text-gray-800 dark:text-white">Lorem Ipsum</p>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
-                  Lorem ipsum dolor
+                  Founder, CEO
                 </p>
               </div>
             </div>

@@ -28,8 +28,8 @@ const services = [
   },
   {
     id: "05",
-    title: "Infrastructure Development",
-    image: "/services/infrastructure.jpg",
+    title: "Consultation",
+    image: "/consultation.jpg",
   },
 ];
 
@@ -44,11 +44,10 @@ export default function ServicesSection() {
         {/* Left text block */}
         <div className="col-span-1">
           <h2 className="text-3xl font-bold leading-snug text-gray-900">
-            Construction Services Tailored <br className="hidden md:block"/> to Build Your Success
+          Exterior Construction to Build Strength<br className="hidden md:block"/>
           </h2>
           <p className="mt-4 text-gray-600">
-            Lorem construction is more than building structures, it’s about
-            creating spaces that inspire.
+          Our mission is more than construction — it’s creating exteriors that reflect strength, style, and lasting value.
           </p>
         </div>
 

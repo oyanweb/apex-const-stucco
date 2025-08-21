@@ -21,11 +21,10 @@ const Hero = () => {
             Great Experience In Building
           </h4>
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">
-            The Best Solution <br /> Industry Business
+          Building Exteriors That <br /> Define Strength and Style
           </h1>
           <p className="text-gray-100 max-w-md mb-6">
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+          From stucco and stone to modern cladding, we craft exterior solutions that combine durability, elegance, and lasting value for your home or business.
           </p>
           <Link href="/contact"> 
             <button className="px-6 py-3 bg-[#FFAA17] shadow font-medium hover:bg-gray-100 transition">

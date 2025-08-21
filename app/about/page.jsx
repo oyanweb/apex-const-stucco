@@ -38,14 +38,14 @@ const About = () => {
 
       {/* About Section */}
       <div className=" relative ">
-        <div className="bg-white rounded-lg shadow-[0_12px_25px_rgba(0,0,0,0.15)] p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="bg-white rounded-lg shadow-[0_12px_25px_rgba(0,0,0,0.15)] p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 ">
           
           {/* Left Image */}
-          <div className="relative">
+          <div className="relative md:ml-40">
             <Image
-              src="/hero-section-background.jpg"
+              src="/aboutus.jpg"
               alt="About Workers"
-              width={600}
+              width={300}
               height={500}
               className="object-cover"
             />
@@ -53,15 +53,13 @@ const About = () => {
 
           {/* Right Content */}
           <div>
-            <h2 className="text-3xl font-bold mb-4">
-              Professional And Expert Roofing Contractor
+            <h2 className="text-4xl font-bold mb-4">
+            Strong and Elegant Building Exteriors That Last a Lifetime
             </h2>
             <p className="text-gray-600 mb-6">
-              Tortor, fames vitae penatibus sed et pharetra mi, mattis est donec 
-              amet ac egestas urna, nascetur sem arcu libero, in lacinia amet eget 
-              sem neque amet elit venenatis. Etiam eget eget phasellus quam aliquet 
-              sed gravida non varius sit faucibus dictumst quis et arcu dapibus non 
-              consequat.
+            We believe your building’s exterior should inspire confidence and pride. 
+            From residential projects to large-scale commercial developments, our team delivers finishes that protect, impress, and endure. 
+            Our company is built on trust, precision, and innovation. By blending timeless materials like stucco and stone with cutting-edge cladding systems, we create exteriors that stand out and stand strong.
             </p>
 
             {/* Features */}

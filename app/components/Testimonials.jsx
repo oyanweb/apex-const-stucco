@@ -5,50 +5,48 @@ import { FaChevronLeft, FaChevronRight, FaQuoteLeft } from "react-icons/fa";
  const testimonials = [
     {
       name: "Alex Hirs",
-      role: "BII",
+      role: "Director, UrbanEdge Realty",
       message:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dui vitae lacus dapibus ultrices.",
-      image: "/avatar1.png",
+        "They transformed the exterior of our home with beautiful stonework. The quality and attention to detail were beyond what we expected. We’ve received so many compliments from neighbors!",
+      image: "/testimonial_1.jpg",
     },
     {
-      name: "Sarah Lee",
-      role: "CTO, TechCorp",
+      name: "David Anderson",
+      role: "CTO, GreenLeaf Developments",
       message:
-        "Working with this team was a game-changer. They delivered on time and exceeded expectations.",
-      image: "/avatar2.png",
+        "The stucco finish they applied made our house look brand new. Durable, modern, and done right the first time. I’d recommend them to anyone looking to upgrade their home’s exterior",
+      image: "/testimonial_2.jpg",
     },
     {
-      name: "Michael Tan",
-      role: "Founder, StartHub",
+      name: "Ryan Mitchell",
+      role: "Founder, BuildSmart",
       message:
-        "Amazing service! Our project scaled seamlessly thanks to their expertise.",
-      image: "/avatar3.png",
+        "Their cladding work gave our office building a sleek, professional look. The team worked efficiently and kept everything on schedule — very reliable and skilled.",
+      image: "/testimonial_3.jpg",
     },
     {
-        name: "Alex Hirs",
-        role: "Bill",
-        message: "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum",
-        image: "/avatar1.png",
+        name: "Jason Miller",
+        role: "Project Manager, StoneWorks",
+        message: "From consultation to installation, everything was smooth. The stone façade they installed completely changed the curb appeal of our property. Fantastic craftsmanship!",
+        image: "/testimonial_4.jpg",
       },
   ];
   
 const Testimonials = () => {
     return (
-        <section className="bg-[#EDEDED] py-16 md:mt-25">
+        <section className="bg-[#EDEDED] py-16 md:mt-35">
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
             
             {/* Left Side */}
-            <div className="flex flex-col justify-center md:ml-9">
-              <h4 className="text-xl font-bold uppercase tracking-wider text-[#FF6600] flex items-center gap-2">
+            <div className="flex flex-col justify-center md:ml-9 md:-mt-50">
+              <h4 className="text-sm md:text-xl font-bold uppercase tracking-wider text-[#FF6600] flex items-center gap-2">
                 <span></span> Testimonials
               </h4>
-              <h2 className="mt-2 text-3xl font-bold text-gray-900">
+              <h2 className="mt-2 text-3xl md:text-5xl font-bold text-gray-900">
                 Our Happy Clients <br /> Says About Us
               </h2>
-              <p className="mt-4 text-gray-600">
-                Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor
-                sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-                dolor sit amet
+              <p className="mt-4 md:mt-9 text-gray-600">
+              Trusted by property owners, developers, and industry leaders — we deliver exterior solutions that last. Here’s what our clients have to say about working with us.
               </p>
             </div>
     
