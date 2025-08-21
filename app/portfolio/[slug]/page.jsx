@@ -2,6 +2,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import projects from "../../data/projects"; 
+import { ChevronsRight } from "lucide-react"
 import { use } from "react"; 
 
 import ContactWrapper from "../../components/ContactWrapper";
@@ -41,7 +42,7 @@ export default function ProjectPage({ params }) {
               alt={project.title}
               width={450}
               height={200}
-              className="shadow-md "
+              className="shadow-md mb-5"
             />
           </div>
 
@@ -98,7 +99,7 @@ export default function ProjectPage({ params }) {
           </div>
         </div>
         {/* NEW SECTION (Description + Client Goal) */}
-        <div className="px-2 md:px-25 pb-15 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+        <div className="px-2 md:px-25 pb-15 mt-5 md:mt-20 grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
           {/* Left Column */}
           <div className="lg:col-span-2 space-y-10">
             {/* Description */}
@@ -120,20 +121,23 @@ export default function ProjectPage({ params }) {
                 is outstanding.
               </p>
 
-              <ul className="space-y-3">
-                {[
-                  "The triple pressures of more regulations outstanding in the creation.",
+              <ul className="space-y-2">
+              {[
+                "The triple pressures of more regulations outstanding in the creation.",
                   "The legacy of the financial crisis has meant a few tricky years.",
                   "Now, the triple pressures of more regulations more regulations.",
                   "Outstanding in the creation the triple pressures of more regulations.",
                   "The triple pressures of more regulations outstanding in the creation.",
-                ].map((point, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-3 h-3 mt-2 bg-orange-500 rounded-full"></span>
-                    <span className="text-gray-700">{point}</span>
-                  </li>
-                ))}
-              </ul>
+              ].map((point, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex items-center justify-center w-5 h-5 aspect-square bg-orange-500 rounded-full shrink-0 self-center">
+                    <ChevronsRight size={13} className="text-white" />
+                  </span>
+                  <span className="text-gray-600">{point}</span>
+                </li>
+
+              ))}
+            </ul>
             </div>
           </div>
 
@@ -144,7 +148,7 @@ export default function ProjectPage({ params }) {
               alt="Client's Goal"
               width={500}
               height={400}
-              className="shadow-md w-full"
+              className="shadow-md w-full hidden md:block"
             />
           </div>
         </div>

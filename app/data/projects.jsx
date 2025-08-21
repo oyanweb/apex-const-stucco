@@ -5,7 +5,7 @@
         description:
           "We applied a modern stucco finish to the exterior of a two-story family home, creating a clean, durable surface with a smooth texture. The finish not only enhanced curb appeal but also provided long-term weather protection and energy efficiency.",
         tech: ["Next.js", "Tailwind CSS", "React"],
-        link: "https://www.veerjimechanical.ca/",
+        link: "https://www.website.com",
         image: "/project4.jpg",
         category: "STUCCO", 
         developerNotes:
@@ -17,7 +17,7 @@
         description:
           "We installed contemporary stone cladding and detailed masonry work on a modern office building, blending natural textures with durable finishes. The result was a refined exterior that balanced aesthetics with long-lasting structural strength.",
         tech: ["React", "Node.js", "Express", "Cloudinary"],
-        link: "https://doggy-delights-iota.vercel.app/",
+        link: "https://www.website.com",
         image: "/project3.jpg",
         category: "CLADDING", 
         developerNotes:
@@ -37,7 +37,7 @@
           "Clerk",
           "Nodemailer",
         ],
-        link: "https://www.route1drivingschool.com",
+        link: "https://www.website.com",
         image: "/project2.jpg",
         category: "STONE", 
         developerNotes:

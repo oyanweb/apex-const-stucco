@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Oyan Web: Web Dev & SEO in Toronto",
-  description: "This is a web agency",
+  title: "Apex Exteriors | Construction & Stucco",
+  description: "Construction and stucco services in Toronto",
   icons: {
     icon: "/favicon.svg"
   }

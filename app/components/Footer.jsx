@@ -9,7 +9,7 @@ const Footer = () => {
         
         {/* Column 1: Logo & Tagline */}
         <div className="flex flex-col space-y-5">
-          <h2 className="text-2xl font-bold tracking-wide">CONSTR</h2>
+          <h2 className="text-2xl font-bold tracking-wide">Apex Logo</h2>
           <p className="text-sm text-gray-200 leading-relaxed">
             We believe construction is more than just building structures —
             it’s about creating comfort, beauty, and durability.

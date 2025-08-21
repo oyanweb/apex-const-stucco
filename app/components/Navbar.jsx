@@ -34,8 +34,7 @@ const Navbar = () => {
             <Link
               href="/"
               className="flex items-center transition-transform duration-300 hover:scale-105"
-            >
-              {/* Logo Symbol */}
+            > 
        
             <div className="relative w-22 h-10 mt-1 md:ml-15">
                 {/* <Image
@@ -47,7 +46,7 @@ const Navbar = () => {
                 />   */}
 
 
-                {mounted && (
+                {/* {mounted && (
                   <Image
                     src={resolvedTheme === "dark" ? "/logo-dark.svg" : "/logo-light.svg"}
                     alt="Oyan Web Agency Logo"
@@ -55,16 +54,16 @@ const Navbar = () => {
                     className="object-contain"
                     priority
                   />
-                )}
+                )} */}
               </div>   
               
                 
-              {/* Logo Text
+              {/* Logo Text */}
               <div className="relative">
-                <span className="text-2xl ml-20 font-semibold  text-[var(--primary)] dark:text-white">  
-                  OyanWeb
+                <span className="text-2xl ml-0 font-semibold  text-[var(--primary)] dark:text-white">  
+                  Apex Logo
                 </span> 
-              </div> */}
+              </div>
             </Link>
           </div>
 

@@ -34,8 +34,15 @@ import { FaChevronLeft, FaChevronRight, FaQuoteLeft } from "react-icons/fa";
   
 const Testimonials = () => {
     return (
-        <section className="bg-[#EDEDED] py-16 md:mt-35">
-          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
+        <section className="shadow-3xl bg-[#EDEDED] py-16 md:mt-35"
+          style={{ 
+            backgroundImage: "url('/testimonials_bg.jpg')",
+            backgroundSize: "cover",   // fills the container
+            backgroundPosition: "center",
+          }}
+        >
+ 
+          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">        
             
             {/* Left Side */}
             <div className="flex flex-col justify-center md:ml-9 md:-mt-50">

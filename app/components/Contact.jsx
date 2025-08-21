@@ -261,13 +261,13 @@ const Contact = () => {
           )}
         />
 
-        {/* Loader or Submit Button */}
+              {/* Loader or Submit Button */}
               {isSubmitting ? (
                 <Loader progress={progress} />
               ) : (
                 <Button
                   type="submit"
-                  className="cursor-pointer rounded-none w-full bg-[#FFAA17] dark:bg-[var(--secondary)] text-black font-semibold py-3 transition-all duration-300"
+                  className="cursor-pointer rounded-none w-full bg-[#FFAA17] hover-[#FF6600]  text-black font-semibold py-3 transition-all duration-300"
                 >
                   Build Comfort
                 </Button>
