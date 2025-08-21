@@ -21,7 +21,7 @@ const Hero = () => {
             Great Experience In Building
           </h4>
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">
-          Building Exteriors That <br /> Define Strength and Style
+          Building Exteriors That <br className="hidden md:flex"/> Define Strength and Style
           </h1>
           <p className="text-gray-100 max-w-md mb-6">
           From stucco and stone to modern cladding, we craft exterior solutions that combine durability, elegance, and lasting value for your home or business.

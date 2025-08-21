@@ -53,7 +53,7 @@ const About = () => {
 
           {/* Right Content */}
           <div>
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mt-6 mb-4">
             Strong and Elegant Building Exteriors That Last a Lifetime
             </h2>
             <p className="text-gray-600 mb-6">
@@ -63,7 +63,7 @@ const About = () => {
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1   grid-cols-2 gap-4 text-sm">
               <Feature text="Certified Company" />
               <Feature text="Precise Builder" />
               <Feature text="Satisfied Guaranteed" />
