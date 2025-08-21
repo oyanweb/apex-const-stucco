@@ -17,7 +17,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/service-1-stucco.jpg",
+      image: "/project4.jpg",
       tag: "Design",
     },
     {
@@ -25,7 +25,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/service-1-stucco.jpg",
+      image: "/project3.jpg",
       tag: "Design",
     },
     {
@@ -33,7 +33,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/service-1-stucco.jpg",
+      image: "/project2.jpg",
       tag: "Design",
     },
     {
@@ -41,7 +41,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/service-1-stucco.jpg",
+      image: "/project1.jpg",
       tag: "Design",
     },
   ];

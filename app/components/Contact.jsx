@@ -1,3 +1,4 @@
+// app/components/Contact.jsx
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -14,7 +15,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import Loader from "@/components/Loader";
 import { useState } from "react";
+import { useEffect } from "react";
 
 // Schema
 const formSchema = z.object({
@@ -22,13 +25,17 @@ const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
   phone: z.string().optional(),
   address: z.string().optional(),
+  subject: z.string().optional(),
   message: z
     .string()
     .min(10, { message: "Message must be at least 10 characters." }),
 });
 
 const Contact = () => {
+  // State for submission status and progress
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState(null);
+  const [progress, setProgress] = useState(0);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -37,15 +44,54 @@ const Contact = () => {
       email: "",
       phone: "",
       address: "",
+      subject: "",
       message: "",
     },
   });
+  // Simulate progress while submitting
+  useEffect(() => {
+    let interval;
+    if (isSubmitting) {
+      setProgress(0); // Reset progress
+      interval = setInterval(() => {
+        setProgress((prev) => {
+          if (prev >= 90) {
+            return prev; // Stop at 90% until the request completes
+          }
+          return prev + 10; // Increment by 10% every 300ms
+        });
+      }, 300);
+    }
+    return () => clearInterval(interval); // Cleanup on unmount or when isSubmitting changes
+  }, [isSubmitting]);
 
   const onSubmit = async (values) => {
-    setIsSubmitting(true);
-    console.log(values);
-    setTimeout(() => setIsSubmitting(false), 1500);
+    try {
+      setIsSubmitting(true);
+  
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+  
+      const data = await res.json();
+  
+      if (!res.ok) {
+        setSubmitMessage({ type: "error", text: data.error || "Something went wrong." });
+      } else {
+        setSubmitMessage({ type: "success", text: data.message || "Message sent successfully!" });
+        form.reset(); // clear form
+      }
+    } catch (err) {
+      console.error("Submit error:", err);
+      setSubmitMessage({ type: "error", text: "Failed to send. Please try again." });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+  
+  
 
   return (
   <section className="w-full relative pb-9 bg-[#ffffff] ">
@@ -86,8 +132,19 @@ const Contact = () => {
     <h3 className="text-xl font-semibold mb-6">
       Let us build your comfort
     </h3>
-      
-    
+    {/* Submission Feedback */}
+          {submitMessage && (
+            <div
+              className={`mb-4 p-2 rounded ${
+                submitMessage.type === "success"
+                  ? "bg-green-100 text-green-800"
+                  : "bg-red-100 text-red-800"
+              }`}
+            >
+              {submitMessage.text}
+            </div>
+          )}
+
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         {/* Name + Email */}
@@ -166,6 +223,25 @@ const Contact = () => {
           />
         </div>
 
+        <FormField
+          control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Subject</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Subject"
+                  className="bg-gray-200"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        
         {/* Message */}
         <FormField
           control={form.control}
@@ -185,13 +261,17 @@ const Contact = () => {
           )}
         />
 
-        <Button
-          type="submit"
-          className="w-full  bg-[#FFAA17]  hover:bg-[#e69910]  rounded-none  text-black font-semibold  mb-5"
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Sending..." : "Build comfort"}
-        </Button>
+        {/* Loader or Submit Button */}
+              {isSubmitting ? (
+                <Loader progress={progress} />
+              ) : (
+                <Button
+                  type="submit"
+                  className="cursor-pointer rounded-none w-full bg-[#FFAA17] dark:bg-[var(--secondary)] text-black font-semibold py-3 transition-all duration-300"
+                >
+                  Build Comfort
+                </Button>
+              )}
       </form>
     </Form>
       </div>

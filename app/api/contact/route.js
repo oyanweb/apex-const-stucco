@@ -1,3 +1,4 @@
+// app/api/contact/route.js
 import { NextResponse } from 'next/server';
 import Contact from '@/Models/Contact';
 import connectdb from '@/lib/mongodb';

@@ -41,7 +41,7 @@ const Services = () => {
       {/* Section Header */}
       <div className="max-w-4xl md:ml-10 md:mb-10 px-4">
           <p className=" text-[#FFAA17] text-sm font-medium mb-2">
-            —— Discover our projects
+            —— Discover our services
           </p>
           <h2 className=" text-3xl sm:text-4xl font-bold  text-[var(--primary-text)]  dark:text-white mb-4">
             High Quality Services Of <br className="hidden md:flex"/> 

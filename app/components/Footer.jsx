@@ -52,8 +52,13 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:text-gray-300 transition uppercase">
+              <Link href="/portfolio" className="hover:text-gray-300 transition uppercase">
                 PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-gray-300 transition uppercase">
+                CONTACT US
               </Link>
             </li>
           </ul>
@@ -63,10 +68,26 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4 tracking-wide">OUR SERVICES</h3>
           <ul className="space-y-4 md:ml-2 text-sm tracking-wide">
-            <li className="hover:text-gray-300 transition uppercase">EXTERIOR WALLS</li>
-            <li className="hover:text-gray-300 transition uppercase">STUCCO</li>
-            <li className="hover:text-gray-300 transition uppercase">STONE</li>
-            <li className="hover:text-gray-300 transition uppercase">CLADDING</li>
+            <li className="hover:text-gray-300 transition uppercase">
+              <Link href="/services" className="hover:text-gray-300 transition uppercase">
+                EXTERIOR WALLS
+              </Link>
+            </li>
+            <li className="hover:text-gray-300 transition uppercase">
+              <Link href="/services" className="hover:text-gray-300 transition uppercase">
+                STUCCO
+              </Link>
+            </li>
+            <li className="hover:text-gray-300 transition uppercase">STONE
+              <Link href="/services" className="hover:text-gray-300 transition uppercase">
+                STONE
+              </Link>
+            </li>
+            <li className="hover:text-gray-300 transition uppercase">
+              <Link href="/services" className="hover:text-gray-300 transition uppercase">
+                CLADDING
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -79,13 +100,13 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-sm font-thin">Email:</p>
-            <p className="text-xl text-base font-semibold">info@email.com</p>
+            <p className="text-xl text-base font-semibold">contact@apexexterior.com</p>
           </div>
           <div>
             <p className="text-sm font-thin">Meet us:</p>
             <p>
-              Trump Pmurt Str., 999 House <br />
-              Planet Mars
+              Martin Grove Rd., 10 House <br />
+              Toronto, Canada
             </p>
           </div>
         </div>
@@ -93,7 +114,17 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="text-center py-6 text-sm text-white">
-        © {new Date().getFullYear()} CONSTR. All Rights Reserved.
+      <p className="text-sm">
+        © {new Date().getFullYear()} Apex Construction. All rights reserved. <br />
+        Website by <a 
+          href="https://oyanweb.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-300"
+        >
+          Oyan Web Agency
+        </a>
+      </p>
       </div>
     </footer>
   );

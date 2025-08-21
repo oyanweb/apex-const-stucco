@@ -63,7 +63,7 @@ const About = () => {
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-1   grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1  sm:grid-cols-2 gap-4 text-sm">
               <Feature text="Certified Company" />
               <Feature text="Precise Builder" />
               <Feature text="Satisfied Guaranteed" />
