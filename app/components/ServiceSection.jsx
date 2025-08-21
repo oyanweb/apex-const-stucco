@@ -38,13 +38,13 @@ export default function ServicesSection() {
   const remaining = services.filter((s) => s.id !== "01" && s.id !== "02");
 
   return (
-    <section className="max-w-7xl mx-auto py-16 px-40">
+    <section className="max-w-7xl mx-auto py-16 px-2 md:px-40">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         
         {/* Left text block */}
         <div className="col-span-1">
           <h2 className="text-3xl font-bold leading-snug text-gray-900">
-            Construction Services Tailored <br /> to Build Your Success
+            Construction Services Tailored <br className="hidden md:block"/> to Build Your Success
           </h2>
           <p className="mt-4 text-gray-600">
             Lorem construction is more than building structures, it’s about

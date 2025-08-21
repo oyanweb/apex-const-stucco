@@ -18,7 +18,7 @@ const Contact = dynamic(() => import('../components/Contact'), {
 
 const About = () => { 
   return (
-    <section className="w-full max-w-7xl mx-auto ">
+    <section className="w-full max-w-7xl mx-auto shadow">
       {/* Hero Section */}
       <div
         className="relative h-64 flex items-center justify-center bg-center bg-cover"
@@ -47,7 +47,7 @@ const About = () => {
               alt="About Workers"
               width={600}
               height={500}
-              className="rounded-lg object-cover"
+              className="object-cover"
             />
           </div>
 

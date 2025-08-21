@@ -43,9 +43,9 @@ export default function FAQSection() {
   </div>
 
 
-     <div className="max-w-6xl grid md:grid-cols-2 gap-10 mx-auto ml-8 -mt-125  relative z-10">
+     <div className="max-w-6xl grid md:grid-cols-2 gap-10 mx-auto md:ml-8 md:-mt-125  relative z-10">
         {/* LEFT - FAQ */}
-        <div className="ml-30 py-9 shadow px-9 bg-white">
+        <div className="shadow-[0_-10px_20px_rgba(0,0,0,0.25)]  md:ml-30 py-9 px-4 md:px-9 bg-white">
           <p className="text-sm text-black font-semibold mb-8">
             Frequently Asked Questions
           </p>
@@ -87,7 +87,7 @@ export default function FAQSection() {
 
         {/* RIGHT - Info Box */}
         <div 
-          className="relative bg-gray-300 max-w-md shadow p-9 mt-20 -ml-10 self-center bg-cover bg-center rounded-lg"
+          className="hidden relative bg-gray-300 max-w-md shadow p-9 mt-20 -ml-10 self-center bg-cover bg-center rounded-lg"
           style={{
             backgroundImage: "url('/faq_2.jpg')",
           }}
