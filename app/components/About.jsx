@@ -111,7 +111,7 @@ const About = () => {
 
 
           {/* More about us */}
-          <div className="flex items-center  gap-4 md:gap-9  mt-4">
+          <div className="flex items-center gap-8 md:gap-9  mt-4">
             <Link href="/about"> 
               <button className="bg-[#FFAA17]   text-sm px-3 md:px-9 py-2 hover:scale-105 transition-transform"> 
                 MORE ABOUT US 

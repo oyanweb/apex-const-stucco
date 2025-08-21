@@ -124,9 +124,9 @@ const Navbar = () => {
               </span>
             </Link>
           ))}
-          <div className="px-3 py-2">
+          {/* <div className="px-3 py-2">
             <ToggleTheme />
-          </div>
+          </div> */}
         </div>
       </div>
       </div>

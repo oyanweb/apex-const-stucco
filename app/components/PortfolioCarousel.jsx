@@ -128,8 +128,9 @@ const PortfolioCarousel = () => {
             </CarouselItem>
             ))}
           </CarouselContent>
-          {/* <CarouselPrevious className="right-285 sm:-left-10  border-gray-700 z-50" />
-          <CarouselNext className="left-285 sm:-right-10 border-right border-gray-700" /> */}
+          <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-50" />
+          <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-50" />
+
         </Carousel>
 
         {/* Pagination dots */}
