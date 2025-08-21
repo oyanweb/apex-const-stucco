@@ -1,85 +1,119 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { PlayCircle, CheckCircle } from "lucide-react";
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+
+const faqs = [
+  {
+    question: "What services does your business provide?",
+    answer: "We offer construction, renovation, consulting, and project management services tailored to client needs.",
+  },
+  {
+    question: "How much do your services cost?",
+    answer: "Pricing depends on project size and scope. We provide customized quotes after consultation.",
+  },
+  {
+    question: "Do you offer guarantees or refunds?",
+    answer: "Yes, we stand behind our work and offer warranties depending on the project type.",
+  },
+  {
+    question: "How do I get started with your services?",
+    answer: "Contact us through our website or give us a call, and we’ll schedule a free consultation.",
+  },
+]
 
 export default function FAQSection() {
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
   return (
-    <section className="max-w-6xl mx-auto px-6 lg:px-12 mt-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      
-      {/* Left: FAQ */}
-      <div>
-        <h4 className="text-orange-500 font-semibold uppercase mb-2">
-          Frequently Asked Questions
-        </h4>
-        <h2 className="text-3xl font-bold mb-4">Questions & Answers</h2>
-        <p className="text-gray-600 mb-6">
-          Providing legal advice, contract drafting, compliance assistance, 
-          intellectual property protection, and other legal support for businesses. 
-          Creating visual content, such as logos, brochures, infographics.
-        </p>
+    <section className="w-full mb-7 relative">
+  {/* Background Section */}
+  <div
+    className="relative h-[500px] bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('/faq.jpg')",
+    }}
+  >
+    {/* Overlay (optional) */}
+    <div className="absolute inset-0 bg-black/30"></div>
+  </div>
 
-        <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>What services does your business provide?</AccordionTrigger>
-            <AccordionContent>
-              We offer customized solutions for each client’s unique needs and budget. Please contact us for a quote.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>How much do your services cost?</AccordionTrigger>
-            <AccordionContent>
-              Our pricing varies depending on the scope of your project and specific requirements.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>Do you offer any guarantees or refunds?</AccordionTrigger>
-            <AccordionContent>
-              Yes, we ensure client satisfaction and provide guarantees based on project type.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>How do I get started with your services?</AccordionTrigger>
-            <AccordionContent>
-              Simply reach out to us via our contact form or email, and we’ll schedule a free consultation.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </div>
 
-      {/* Right: Video + Stats */}
-      <div className="relative">
-        {/* Image */}
-        <Image
-          src="/faq-video.jpg"
-          alt="FAQ Video"
-          width={600}
-          height={400}
-          className="rounded-lg object-cover"
-        />
-        {/* Play Button Overlay */}
-        <button className="absolute inset-0 flex items-center justify-center">
-          <PlayCircle className="w-16 h-16 text-orange-500 drop-shadow-lg" />
-        </button>
+     <div className="max-w-6xl grid md:grid-cols-2 gap-10 mx-auto ml-8 -mt-125  relative z-10">
+        {/* LEFT - FAQ */}
+        <div className="ml-30 py-9 shadow px-9 bg-white">
+          <p className="text-sm text-black font-semibold mb-8">
+            Frequently Asked Questions
+          </p>
+          <h2 className="text-3xl  text-black font-bold mb-4">Questions & Answers</h2>
+          <p className=" text-black  mb-8">
+            Providing legal advice, contract drafting, compliance assistance,
+            and intellectual property protection. We create custom solutions for
+            each client depending on their needs.
+          </p>
 
-        {/* Bottom Box */}
-        <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-4 max-w-sm">
-          <h3 className="font-bold text-lg text-gray-900">
-            We Have Many Happy Clients All Over World Wide
-          </h3>
-          <div className="mt-3 space-y-2 text-gray-700 text-sm">
-            <div className="flex items-center gap-2">
-              <CheckCircle className="text-orange-500 w-4 h-4" />
-              <span>Award Winning Agency</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="text-orange-500 w-4 h-4" />
-              <span>Highest Success Rates</span>
-            </div>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div key={i} className=" text-black border border-gray-400/50 rounded-lg overflow-hidden bg-white/10 backdrop-blur">
+                <button
+                  className="w-full flex justify-between items-center p-4 font-medium text-left"
+                  onClick={() => toggleFAQ(i)}
+                >
+                  {faq.question}
+                  <span>{openIndex === i ? "−" : "+"}</span>
+                </button>
+
+                <AnimatePresence>
+                  {openIndex === i && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="px-4 pb-4  text-black "
+                    >
+                      {faq.answer}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT - Info Box */}
+        <div 
+          className="relative bg-gray-300 max-w-md shadow p-9 mt-20 -ml-10 self-center bg-cover bg-center rounded-lg"
+          style={{
+            backgroundImage: "url('/faq_2.jpg')",
+          }}
+        >
+          {/* Overlay if you want to dim the image */}
+          <div className="absolute inset-0 bg-black/60 "></div>
+
+          <div className="relative z-10 text-white"> 
+          <div className="flex items-center justify-start mb-3">
+            <img 
+              src="/group_icon.png"   // <-- replace with your image file path
+              alt="Happy Clients Icon" 
+              className="w-12 h-12 object-contain" 
+            />
+          </div>
+            <h3 className="text-2xl text-[#FF6600] font-bold mb-2">
+              We have many happy clients all over worldwide
+            </h3>
+            <ul className="space-y-1">
+              <li>✔ Highest Success Rates</li>
+              <li>✔ Trusted by Leading Companies</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-  );
+</section>
+
+  )
 }

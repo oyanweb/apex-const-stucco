@@ -54,54 +54,54 @@ const Testimonials = () => {
     
 
             {/* Right Side */}
-<div className="grid grid-cols-2 gap-6 relative z-10">
-  
-  {/* Left column testimonials */}
-  <div className="flex flex-col gap-6">
-    {testimonials.slice(0, 2).map((t, index) => (
-      <div
-        key={index}
-        className="bg-white border border-gray-300  p-5 shadow-lg"
-      >
-        <div className="flex items-center mb-4">
-          <img
-            src={t.image}
-            alt={t.name}
-            className="h-10 w-10 rounded-full border border-gray-300 mr-3"
-          />
-          <div>
-            <h4 className="font-semibold text-gray-900">{t.name}</h4>
-            <p className="text-sm text-gray-500">{t.role}</p>
-          </div>
-        </div>
-        <p className="text-gray-600 text-sm mt-5 mb-5">{t.message}</p>
-      </div>
-    ))}
-  </div>
+            <div className="grid grid-cols-2 gap-6 relative z-10">
+              
+              {/* Left column testimonials */}
+              <div className="flex flex-col gap-6">
+                {testimonials.slice(0, 2).map((t, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border border-gray-300  p-5 shadow-lg"
+                  >
+                    <div className="flex items-center mb-4">
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="h-10 w-10 rounded-full border border-gray-300 mr-3"
+                      />
+                      <div>
+                        <h4 className="font-semibold text-gray-900">{t.name}</h4>
+                        <p className="text-sm text-gray-500">{t.role}</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-600 text-sm mt-5 mb-5">{t.message}</p>
+                  </div>
+                ))}
+              </div>
 
-  {/* Right column testimonials (lifted up) */}
-  <div className="flex flex-col gap-6 -mt-33">
-    {testimonials.slice(2).map((t, index) => (
-      <div
-        key={index}
-        className="bg-white border border-gray-300 p-5 shadow-lg"
-      >
-        <div className="flex items-center mb-4">
-          <img
-            src={t.image}
-            alt={t.name}
-            className="h-10 w-10 rounded-full border border-gray-300 mr-3"
-          />
-          <div>
-            <h4 className="font-semibold text-gray-900">{t.name}</h4>
-            <p className="text-sm text-gray-500">{t.role}</p>
-          </div>
-        </div>
-        <p className="text-gray-600 text-sm  mt-5 mb-5">{t.message}</p>
-      </div>
-    ))}
-  </div>
-</div>
+              {/* Right column testimonials (lifted up) */}
+              <div className="flex flex-col gap-6 -mt-33">
+                {testimonials.slice(2).map((t, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border border-gray-300 p-5 shadow-lg"
+                  >
+                    <div className="flex items-center mb-4">
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="h-10 w-10 rounded-full border border-gray-300 mr-3"
+                      />
+                      <div>
+                        <h4 className="font-semibold text-gray-900">{t.name}</h4>
+                        <p className="text-sm text-gray-500">{t.role}</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-600 text-sm  mt-5 mb-5">{t.message}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
 
 

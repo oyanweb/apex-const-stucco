@@ -1,6 +1,7 @@
 // app/components/About.jsx
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -111,9 +112,11 @@ const About = () => {
 
           {/* More about us */}
           <div className="flex items-center gap-9 mt-4">
-            <button className="bg-[#FFAA17]   text-sm px-9 py-2 hover:scale-105 transition-transform">
-              MORE ABOUT US
-            </button>
+            <Link href="/about"> 
+              <button className="bg-[#FFAA17]   text-sm px-9 py-2 hover:scale-105 transition-transform"> 
+                MORE ABOUT US 
+              </button>
+            </Link>
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700"></div>
               <div>

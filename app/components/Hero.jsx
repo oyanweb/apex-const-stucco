@@ -26,9 +26,11 @@ const Hero = () => {
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
             dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
           </p>
-          <button className="px-6 py-3 bg-[#FFAA17] shadow font-medium hover:bg-gray-100 transition">
-            Start Project
-          </button>
+          <Link href="/contact"> 
+            <button className="px-6 py-3 bg-[#FFAA17] shadow font-medium hover:bg-gray-100 transition">
+              Start Project 
+            </button>
+          </Link>
         </div>
 
         {/* Right angled social bar */}
@@ -41,11 +43,7 @@ const Hero = () => {
             <Link className="[writing-mode:vertical-rl] rotate-180" href="#">LINKEDIN</Link>
             <Link className="[writing-mode:vertical-rl] rotate-180" href="#">DRIBBLE</Link>
           </div>
-        </div>
-
-
-         
-
+        </div> 
         {/* Custom CSS for sharp angles */}
         <style jsx>{`
           .clip-angles {

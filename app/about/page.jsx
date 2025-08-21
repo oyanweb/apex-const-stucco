@@ -6,10 +6,15 @@ import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import React from "react";
 
-// const FAQSection = dynamic(() => import('../components/FAQSection.jsx'), {
-//     ssr: false,
-//     loading: () => <div style={{ height: 300 }} />,  
-//   });
+const FAQSection = dynamic(() => import('../components/FAQSection'), {
+    ssr: false,
+    loading: () => <div style={{ height: 300 }} />,  
+  });
+ 
+const Contact = dynamic(() => import('../components/Contact'), {
+  ssr: false,
+  loading: () => <div style={{ height: 300 }} />,  
+});
 
 const About = () => { 
   return (
@@ -32,7 +37,7 @@ const About = () => {
       </div>
 
       {/* About Section */}
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 -mt-16 relative z-10">
+      <div className=" relative ">
         <div className="bg-white rounded-lg shadow-[0_12px_25px_rgba(0,0,0,0.15)] p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10">
           
           {/* Left Image */}
@@ -68,9 +73,10 @@ const About = () => {
             </div>
           </div>
         </div>
+        
+      <FAQSection />
+      <Contact />
       </div>
-{/* 
-      <FAQSection /> */}
     </section>
   );
 }
