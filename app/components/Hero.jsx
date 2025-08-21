@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section >
       <div
-        className="relative max-w-7xl mx-auto l mx-auto min-h-[500px] md:h-[500px] lg:h-[550px]  flex items-center justify-center bg-center bg-no-repeat bg-cover"
+        className="relative max-w-7xl mx-auto l mx-auto h-[500px] lg:h-[550px]  flex items-center justify-center bg-center bg-no-repeat bg-cover"
         style={{ 
           backgroundImage: "url('/hero-section-background.jpg')",
           backgroundSize: "cover",   // fills the container

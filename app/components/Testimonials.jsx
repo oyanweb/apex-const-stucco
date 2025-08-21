@@ -34,7 +34,7 @@ import { FaChevronLeft, FaChevronRight, FaQuoteLeft } from "react-icons/fa";
   
 const Testimonials = () => {
     return (
-        <section className="bg-[#EDEDED] py-16 mt-25">
+        <section className="bg-[#EDEDED] py-16 md:mt-25">
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
             
             {/* Left Side */}

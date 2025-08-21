@@ -37,16 +37,16 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-16 px-0">
+    <section className="md:py-16 px-0">
       {/* Section Header */}
-      <div className="max-w-4xl md:ml-10 mb-10">
+      <div className="max-w-4xl md:ml-10 md:mb-10 px-4">
           <p className=" text-[#FFAA17] text-sm font-medium mb-2">
             —— Discover our projects
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold  text-[var(--primary-text)]  dark:text-white mb-4">
-            High Quality Services Of <br /> 
+          <h2 className=" text-3xl sm:text-4xl font-bold  text-[var(--primary-text)]  dark:text-white mb-4">
+            High Quality Services Of <br className="hidden md:flex"/> 
             Multiple Industries
-          </h2>
+          </h2> 
       </div>
 
       {/* Services Grid */}
