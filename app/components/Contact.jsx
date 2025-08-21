@@ -79,7 +79,7 @@ const Contact = () => {
 
     
     {/* Form card, placed separately so it's taller */}
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start -mt-105 px-6">
+    <div className="max-w-6xl md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start md:-mt-105 px-2 md:px-6">
       <div></div> {/* empty div to keep spacing/alignment */}
       <div className="bg-white rounded-lg shadow-xl p-8 relative z-10">
       <p className="text-xs font-semibold uppercase  text-[#FFAA17]  mb-2">Join us now</p>

@@ -63,7 +63,7 @@ const PortfolioCarousel = () => {
   return (
     <section className="px-4 py-12">
       {/* Section Header */}
-      <div className="max-w-4xl ml-10 mb-10 flex frid-2 justify-between ">
+      <div className="max-w-4xl md:ml-10 mb-10 md:flex  frid-2 justify-between ">
         <div>
           <p className="text-[#FFAA17] text-sm font-medium mb-2">
             —— Discover our projects
@@ -79,7 +79,7 @@ const PortfolioCarousel = () => {
         
         <div>
           <Link href="/portfolio">
-            <button className="mt-17 -mr-80 bg-[#FFAA17] font-medium px-6 py-2  dark:hover:bg-gray-700 transition">
+            <button className="md:mt-17 md:-mr-80 bg-[#FFAA17] font-medium px-6 py-2  dark:hover:bg-gray-700 transition">
               View other projects
             </button>
           </Link>

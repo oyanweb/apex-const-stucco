@@ -33,9 +33,9 @@ const Footer = () => {
         </div>
 
         {/* Column 2: Useful Links */}
-        <div className="ml-6">
+        <div className="md:ml-6">
           <h3 className="text-lg font-semibold mb-4 tracking-wide">USEFUL LINKS</h3>
-          <ul className="space-y-4 ml-2 text-sm tracking-wide">
+          <ul className="space-y-4 md:ml-2 text-sm tracking-wide">
             <li>
               <Link href="/" className="hover:text-gray-300 transition uppercase">
                 HOME
@@ -62,7 +62,7 @@ const Footer = () => {
         {/* Column 3: Our Services */}
         <div>
           <h3 className="text-lg font-semibold mb-4 tracking-wide">OUR SERVICES</h3>
-          <ul className="space-y-4 ml-2 text-sm tracking-wide">
+          <ul className="space-y-4 md:ml-2 text-sm tracking-wide">
             <li className="hover:text-gray-300 transition uppercase">EXTERIOR WALLS</li>
             <li className="hover:text-gray-300 transition uppercase">STUCCO</li>
             <li className="hover:text-gray-300 transition uppercase">STONE</li>

@@ -5,10 +5,11 @@ const Hero = () => {
   return (
     <section >
       <div
-        className="relative max-w-7xl mx-auto h-screen flex items-center justify-center bg-center bg-no-repeat bg-cover"
+        className="relative max-w-7xl mx-auto l mx-auto min-h-[500px] md:h-[500px] lg:h-[550px]  flex items-center justify-center bg-center bg-no-repeat bg-cover"
         style={{ 
           backgroundImage: "url('/hero-section-background.jpg')",
-          backgroundSize: "1280px auto", // fixed size
+          backgroundSize: "cover",   // fills the container
+          backgroundPosition: "center",
          }}
       >
         {/* Overlay (optional, for darkening image) */}
@@ -31,11 +32,9 @@ const Hero = () => {
               Start Project 
             </button>
           </Link>
-        </div>
-
+        </div> 
         {/* Right angled social bar */}
-        {/* Right angled social bar */}
-        <div className="absolute right-0 top-0 h-full w-20 bg-white flex flex-col items-center justify-center clip-angles z-20 shadow-lg">
+        <div className="hidden md:flex absolute right-0 top-0 h-full w-20 bg-white flex flex-col items-center justify-center clip-angles z-20 shadow-lg">
           <div className="flex flex-col items-center gap-6 text-black font-medium text-sm">
         
             <Link className="[writing-mode:vertical-rl] rotate-180" href="#">FACEBOOK</Link>

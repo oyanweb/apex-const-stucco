@@ -8,7 +8,7 @@ const About = () => {
     <section className=" px-4 py-16  ">
       <div className=" flex flex-col lg:flex-row items-center gap-12">
         {/* Images on the left */}
-        <div className="relative w-full lg:w-1/2 flex justify-center">
+        <div className="relative w-full lg:w-1/2 hidden md:flex justify-center">
         
         {/* <div className="border-t-6 border-black absolute flex flex-col top-17 left-85 w-27 h-30 bg-[#FBB040] dark:bg-gray-600 z-40 flex items-center justify-center text-black font-bold text-5xl text-center">
           10+ <span className="block font-bold text-sm font-extralight text-sm font-semibold">YEARS OF EXPERIENCE</span>
@@ -111,9 +111,9 @@ const About = () => {
 
 
           {/* More about us */}
-          <div className="flex items-center gap-9 mt-4">
+          <div className="flex items-center  gap-4 md:gap-9  mt-4">
             <Link href="/about"> 
-              <button className="bg-[#FFAA17]   text-sm px-9 py-2 hover:scale-105 transition-transform"> 
+              <button className="bg-[#FFAA17]   text-sm px-3 md:px-9 py-2 hover:scale-105 transition-transform"> 
                 MORE ABOUT US 
               </button>
             </Link>

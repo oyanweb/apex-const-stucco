@@ -39,7 +39,7 @@ const Services = () => {
   return (
     <section className="py-16 px-0">
       {/* Section Header */}
-      <div className="max-w-4xl ml-10 mb-10">
+      <div className="max-w-4xl md:ml-10 mb-10">
           <p className=" text-[#FFAA17] text-sm font-medium mb-2">
             —— Discover our projects
           </p>

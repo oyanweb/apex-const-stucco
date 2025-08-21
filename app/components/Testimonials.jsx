@@ -38,7 +38,7 @@ const Testimonials = () => {
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6">
             
             {/* Left Side */}
-            <div className="flex flex-col justify-center ml-9">
+            <div className="flex flex-col justify-center md:ml-9">
               <h4 className="text-xl font-bold uppercase tracking-wider text-[#FF6600] flex items-center gap-2">
                 <span></span> Testimonials
               </h4>
@@ -54,7 +54,7 @@ const Testimonials = () => {
     
 
             {/* Right Side */}
-            <div className="grid grid-cols-2 gap-6 relative z-10">
+            <div className="grid md:grid-cols-2 gap-6 relative z-10">
               
               {/* Left column testimonials */}
               <div className="flex flex-col gap-6">
@@ -80,7 +80,7 @@ const Testimonials = () => {
               </div>
 
               {/* Right column testimonials (lifted up) */}
-              <div className="flex flex-col gap-6 -mt-33">
+              <div className="flex flex-col md:flex-col gap-6 md:-mt-33">
                 {testimonials.slice(2).map((t, index) => (
                   <div
                     key={index}
