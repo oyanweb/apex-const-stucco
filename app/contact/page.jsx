@@ -117,7 +117,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="w-full">
+    <section className="w-full max-w-7xl mx-auto ">
        
       <Contact /> 
     </section>

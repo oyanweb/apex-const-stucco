@@ -4,8 +4,8 @@ import { FaWhatsapp, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#0B0E29] text-white  select-none">
-      <div className="max-w-7xl mx-auto py-14 px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10">
+    <footer className=" bg-[#0B0E29] text-white  select-none w-full max-w-7xl mx-auto ">
+      <div className="  py-14 px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10">
         
         {/* Column 1: Logo & Tagline */}
         <div className="flex flex-col space-y-5">

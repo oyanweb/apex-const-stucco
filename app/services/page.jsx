@@ -18,7 +18,7 @@ const ServicesSection = dynamic(() => import('../components/ServiceSection'), {
 const Services = () => {
 
   return (
-      <section className="w-full">
+      <section className="w-full max-w-7xl mx-auto ">
         {/* Hero Section */}
         <div
           className="relative h-64 flex items-center justify-center bg-center bg-cover"
