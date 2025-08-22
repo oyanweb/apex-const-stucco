@@ -192,7 +192,7 @@ export async function POST(request) {
 
 
           <div style="margin-top: 30px;">
-            <p>Warm regards,<br><strong>Oyan Web Team</strong></p>
+            <p>Warm regards,<br><strong>Apex Exteriors Team</strong></p>
           </div>
         </div>
         
@@ -204,7 +204,7 @@ export async function POST(request) {
         </div>
         
         <div class="footer">
-          <p>© 2025 Oyan Web. All rights reserved.</p> 
+          <p>© 2025 Apex Exteriors. All rights reserved.</p> 
         </div>
       </div>
     </body>
@@ -228,9 +228,9 @@ export async function POST(request) {
       If you have any questions or specific topics you'd like us to cover, feel free to reply to this email.
       
       Warm regards,
-      Oyan Web Team
+      Apex Exteriors Team
       
-      © 2025 Oyan Web. All rights reserved.
+      © 2025 Apex Exteriors. All rights reserved.
       To unsubscribe or update your preferences, click here.
     `;
 

@@ -25,11 +25,11 @@ export async function POST(request) {
   try {
     // Parse the form data
     const body = await request.json();
-    const { name, email, subject, message } = body;
+    const { name, email, message } = body;
     console.log("Contact form submission:", body);
 
     // Validate the data
-    if (!name || !email || !subject || !message) {
+    if (!name || !email || !message) {
       return NextResponse.json({ error: 'All fields are required' }, { status: 400 });
     }
 
@@ -39,7 +39,7 @@ export async function POST(request) {
 
     // Connect to the database and save the contact information
     await connectdb();
-    const newContact = await Contact.create({ name, email, subject, message });
+    const newContact = await Contact.create({ name, email, message });
 
     // Get current date for the email
     const currentDate = new Date().toLocaleDateString('en-US', { 
@@ -49,16 +49,16 @@ export async function POST(request) {
     });
 
     // Generate email content
-    const userConfirmationEmail = generateUserConfirmationEmail(name, subject, currentDate);
-    const adminNotificationEmail = generateAdminNotificationEmail(name, email, subject, message, currentDate);
+    const userConfirmationEmail = generateUserConfirmationEmail(name, currentDate);
+    const adminNotificationEmail = generateAdminNotificationEmail(name, email, message, currentDate);
 
 
     // Send confirmation email to the user
     try {
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
-        to: email,
-        subject: "We've Received Your Message",
+        to: email, 
+        subject: "Apex Exteriors: We’ve received your message",  
         text: userConfirmationEmail.text,
         html: userConfirmationEmail.html,
       });
@@ -70,8 +70,8 @@ export async function POST(request) {
     try {
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
-        to: process.env.EMAIL_USER,
-        subject: `New Contact Form Submission: ${subject}`,
+        to: process.env.EMAIL_USER, 
+        subject: `New Contact Form Submission from ${name}`, 
         text: adminNotificationEmail.text,
         html: adminNotificationEmail.html,
       });
@@ -94,7 +94,7 @@ export async function POST(request) {
 }
 
 // Function to generate user confirmation email
-function generateUserConfirmationEmail(name, subject, currentDate) {
+function generateUserConfirmationEmail(name, currentDate) {
   // HTML version
   const html = `
     <!DOCTYPE html>
@@ -125,7 +125,7 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
         }
         
         .header {
-          background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+          background: linear-gradient(135deg, #FFAA17 0%, #FFAA17 100%);
           padding: 30px 20px;
           text-align: center;
           color: white;
@@ -153,7 +153,7 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
           font-size: 20px;
           font-weight: 600;
           margin-bottom: 20px;
-          color: #2563EB;
+          color: #FFAA17;
         }
         
         .message {
@@ -162,7 +162,7 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
         
         .message-box {
           background-color: #F3F4F6;
-          border-left: 4px solid #2563EB;
+          border-left: 4px solid #FFAA17;
           padding: 15px 20px;
           margin-bottom: 25px;
           border-radius: 4px;
@@ -171,13 +171,13 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
         .message-box h3 {
           margin-top: 0;
           margin-bottom: 10px;
-          color: #2563EB;
+          color: #FFAA17;
           font-size: 18px;
         }
         
         .cta-button {
           display: inline-block;
-          background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+          background: linear-gradient(135deg, #FFAA17 0%, #FFAA17 100%);
           color: white;
           text-decoration: none;
           padding: 12px 30px;
@@ -215,7 +215,7 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
         }
         
         .footer a {
-          color: #2563EB;
+          color: #FFAA17;
           text-decoration: none;
         }
         
@@ -243,41 +243,23 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
           <div class="greeting">Hello ${name},</div>
           
           <div class="message">
-            <p>Thank you for contacting us. We've received your message regarding "${subject}" and we appreciate you taking the time to reach out.</p>
+            <p>Thank you for contacting us. We've received your message and we appreciate you taking the time to reach out.</p>
             <p>Our team will review your inquiry and get back to you as soon as possible. We typically respond within 24-48 business hours.</p>
           </div>
           
           <div class="message-box">
-            <h3>📝 Your Inquiry Details</h3>
-            <p><strong>Subject:</strong> ${subject}</p>
+            <h3>📝 Your Inquiry Details</h3> 
             <p><strong>Date Submitted:</strong> ${currentDate}</p>
             <p>We've saved a copy of your message and it's been assigned to the appropriate team member.</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <a href="www.OyanWeb.com" class="cta-button">Visit Our Website</a>
-          </div>
-          
+          </div> 
           <div style="margin-top: 30px;">
             <p>If you have any additional information to add to your inquiry, feel free to reply to this email.</p>
             <p>Warm regards,<br><strong>Customer Support Team</strong></p>
           </div>
         </div>
-        
-        <div class="social-links">
-          <a href="#" class="social-icon">📱</a>
-          <a href="#" class="social-icon">📘</a>
-          <a href="#" class="social-icon">📸</a>
-          <a href="#" class="social-icon">🐦</a>
-        </div>
-        
+         
         <div class="footer">
-          <p>© 2025 Oyan Web. All rights reserved.</p>
-          <p>
-            <a href="#">Privacy Policy</a> | 
-            <a href="#">Terms of Service</a> | 
-            <a href="#">Contact Us</a>
-          </p>
+          <p>© 2025 Apex Exteriors. All rights reserved.</p> 
         </div>
       </div>
     </body>
@@ -291,12 +273,11 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
     
     Hello ${name},
     
-    Thank you for contacting us. We've received your message regarding "${subject}" and we appreciate you taking the time to reach out.
+    Thank you for contacting us. We've received your message and we appreciate you taking the time to reach out.
     
     Our team will review your inquiry and get back to you as soon as possible. We typically respond within 24-48 business hours.
     
-    YOUR INQUIRY DETAILS:
-    Subject: ${subject}
+    YOUR INQUIRY DETAILS: 
     Date Submitted: ${currentDate}
     
     We've saved a copy of your message and it's been assigned to the appropriate team member.
@@ -306,7 +287,7 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
     Warm regards,
     Customer Support Team
     
-    © 2025 Oyan Web. All rights reserved.
+    © 2025 Apex Exteriors. All rights reserved.
     Privacy Policy | Terms of Service | Contact Us
   `;
 
@@ -314,7 +295,7 @@ function generateUserConfirmationEmail(name, subject, currentDate) {
 }
 
 // Function to generate admin notification email
-function generateAdminNotificationEmail(name, email, subject, message, currentDate) {
+function generateAdminNotificationEmail(name, email, message, currentDate) {
   // HTML version
   const html = `
     <!DOCTYPE html>
@@ -347,7 +328,6 @@ function generateAdminNotificationEmail(name, email, subject, message, currentDa
         <h3 style="margin-top: 0; color: #4f46e5; font-size: 16px;">Contact Information</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #4f46e5; text-decoration: none;">${email}</a></p>
-        <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Date Submitted:</strong> ${currentDate}</p>
       </div>
       
@@ -357,14 +337,16 @@ function generateAdminNotificationEmail(name, email, subject, message, currentDa
       </div>
       
       <div style="text-align: center; margin-top: 25px;">
-        <a href="mailto:${email}?subject=RE: ${subject}" style="display: inline-block; background: linear-gradient(135deg, #6366f1, #4f46e5); color: white; text-decoration: none; padding: 12px 26px; border-radius: 50px; font-weight: 600; font-size: 24px; transition: all 0.3s ease; margin-bottom: 15px;">Reply to ${name}</a>
+        <a href="mailto:${email}?subject=RE: Your Contact Form Submission" style="display: inline-block; background: linear-gradient(135deg, #6366f1, #4f46e5); color: white; text-decoration: none; padding: 12px 26px; border-radius: 50px; font-weight: 600; font-size: 24px; transition: all 0.3s ease; margin-bottom: 15px;">
+        Reply to ${name}
+        </a>
       </div>
 
     </div>
     
     <div style="font-size: 13px; color: #6b7280; text-align: center; padding: 20px; background-color: #f3f4f6;">
       <p>This is an automated notification from your website's contact form system.</p>
-      <p>© 2025 Oyan Web. All rights reserved.</p>
+      <p>© 2025 Apex. All rights reserved.</p>
     </div>
 
   </div>
@@ -385,8 +367,7 @@ function generateAdminNotificationEmail(name, email, subject, message, currentDa
     
     CONTACT INFORMATION:
     Name: ${name}
-    Email: ${email}
-    Subject: ${subject}
+    Email: ${email} 
     Date Submitted: ${currentDate}
     
     MESSAGE CONTENT:
@@ -395,7 +376,7 @@ function generateAdminNotificationEmail(name, email, subject, message, currentDa
     To reply directly to this user, please email them at: ${email}
     
     This is an automated notification from your website's contact form system.
-    © 2025 Oyan Web. All rights reserved.
+    © 2025 Apex Exteriors. All rights reserved.
   `;
 
   return { html, text };
