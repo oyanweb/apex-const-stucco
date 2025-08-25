@@ -12,7 +12,7 @@ const Footer = () => {
         {/* Column 1: Logo & Tagline */}
         <div className="flex flex-col space-y-5">
           {/* Logo */}
-          <div className="-mt-15 -ml-8 -mb-5 flex items-start">
+          <div className=" -mt-15 md:-ml-8 -mb-5 flex items-start">
           <Link
             href="/"
             className="flex items-start transition-transform duration-300"
