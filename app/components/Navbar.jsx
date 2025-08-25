@@ -35,7 +35,7 @@ const Navbar = () => {
             href="/"
             className="flex items-start transition-transform duration-300"
           > 
-            <div className="relative w-70 h-50 mt-2 -ml-4 md:ml-10">
+            <div className="relative w-70 h-50 mt-2 -ml-4 md:ml-6">
               <Image
                 src="/apex_logo5.png"
                 alt="Apex Exteriors Logo"
