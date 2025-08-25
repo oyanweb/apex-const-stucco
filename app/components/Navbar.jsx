@@ -28,47 +28,35 @@ const Navbar = () => {
     <nav className=" max-w-7xl  mx-auto  bg-[#111111] select-none bg-white dark:bg-[var(--primary)] sticky top-0 z-50 backdrop-blur-md"> 
     <div className=" shadow-[0_0_10px_rgba(0,0,0,0.15)] dark:border-2 dark:border-[#8B2E2E] dark:shadow-[0_0_10px_#8B2E2E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  mr-10">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex h-20 items-center  justify-between ">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Link
-              href="/"
-              className="flex items-center transition-transform duration-300 hover:scale-105"
-            > 
-       
-            <div className="relative w-22 h-10 mt-1 md:ml-15">
-                {/* <Image
-                  src="/logo-light.svg"
-                  alt="Oyan Web Agency Logo"
-                  fill
-                  className="object-contain"
-                  priority
-                />   */}
+          <div className="flex items-start">
+          <Link
+            href="/"
+            className="flex items-start transition-transform duration-300"
+          > 
+            <div className="relative w-70 h-50 mt-2 md:ml-10">
+              <Image
+                src="/apex_logo5.png"
+                alt="Apex Exteriors Logo"
+                fill
+                className="object-contain"
+                priority
+              />  
+            </div>   
 
-
-                {/* {mounted && (
-                  <Image
-                    src={resolvedTheme === "dark" ? "/logo-dark.svg" : "/logo-light.svg"}
-                    alt="Oyan Web Agency Logo"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                )} */}
-              </div>   
-              
-                
-              {/* Logo Text */}
-              <div className="relative">
-                <span className="text-2xl ml-0 font-semibold  text-[var(--primary)] dark:text-white">  
-                  Apex Logo
-                </span> 
+            {/* Logo Text */}
+            {/* <div className="relative mt-9 -ml-2">  
+              <div className="font-cinzel text-3xl uppercase text-[var(--primary)]">
+                Apex Exterirors
               </div>
-            </Link>
+            </div> */}
+          </Link>
           </div>
 
+
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link key={item.name} href={item.href}>
                 <span className="text-lg text-[#000]  dark:text-[var(--secondary)] font-medium transition-all duration-300 relative group drop-shadow-sm">

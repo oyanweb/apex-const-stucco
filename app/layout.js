@@ -1,8 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cinzel } from "next/font/google";
 import { ThemeProvider } from "./components/theme-provider";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; 
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["400", "700", "900"], // choose weights you need
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,12 +32,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > 
-          <Navbar />
-          {children}
-          <Footer/> 
+        className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} antialiased`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
       </body>
+
     </html>
   );
 }

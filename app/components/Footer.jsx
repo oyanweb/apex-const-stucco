@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+
+import Image from "next/image"; 
 import { FaWhatsapp, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,7 +11,23 @@ const Footer = () => {
         
         {/* Column 1: Logo & Tagline */}
         <div className="flex flex-col space-y-5">
-          <h2 className="text-2xl font-bold tracking-wide">Apex Logo</h2>
+          {/* Logo */}
+          <div className="-mt-15 -ml-8 -mb-5 flex items-start">
+          <Link
+            href="/"
+            className="flex items-start transition-transform duration-300"
+          > 
+            <div className="relative w-50 h-30 mt-2 md:ml-10">
+              <Image
+                src="/apex_logo_white.png"
+                alt="Apex Exteriors Logo"
+                fill
+                className="object-contain"
+                priority
+              />  
+            </div>    
+          </Link>
+          </div>
           <p className="text-sm text-gray-200 leading-relaxed">
             We believe construction is more than just building structures —
             it’s about creating comfort, beauty, and durability.
