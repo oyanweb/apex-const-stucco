@@ -8,23 +8,23 @@ const Services = () => {
   const services = [
     {
       number: "01",
-      title: "Exterior Wall Systems",
+      title: "EIFS",
       description:
-        "Complete solutions for protection, insulation, and lasting performance.",
+        "Exterior Insulation & Finish Systems",
       image: "/ext_walls.webp",
     },
     {
       number: "02",
-      title: "Stucco Finishes",
+      title: "Masonry",
       description:
-        "Smooth, textured, and durable plaster coatings for any style.",
+        "Stone, Brick, Block",
       image: "/stucco.jpg",
     },
     {
       number: "03",
-      title: "Stone Veneers & Masonry",
+      title: "Siding",
       description:
-        "Timeless beauty and strength with natural or manufactured stone.",
+        "ACM Panels & Cladding",
       image: "/cladding.webp",
     },
     {
@@ -44,8 +44,7 @@ const Services = () => {
             —— Discover our services
           </p>
           <h2 className=" text-3xl sm:text-4xl font-bold  text-[var(--primary-text)]  dark:text-white mb-4">
-            High Quality Services Of <br className="hidden md:flex"/> 
-            Multiple Industries
+          Exterior Solutions
           </h2> 
       </div>
 

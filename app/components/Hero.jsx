@@ -24,11 +24,11 @@ const Hero = () => {
           Building Exteriors That <br className="hidden md:flex"/> Define Strength and Style
           </h1>
           <p className="text-gray-100 max-w-md mb-6">
-          From stucco and stone to modern cladding, we craft exterior solutions that combine durability, elegance, and lasting value for your home or business.
+          From EIFS to masonry, siding, and cladding — trusted by homeowners, builders, and developers for craftsmanship, speed, and reliability.
           </p>
           <Link href="/contact"> 
             <button className="px-6 py-3 bg-[#FFAA17] shadow font-medium hover:bg-gray-100 transition">
-            Get a Quote
+            Request a Quote
             </button>
           </Link>
         </div> 

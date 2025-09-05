@@ -6,8 +6,8 @@ import { FaWhatsapp, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#0B0E29] text-white  select-none w-full max-w-7xl mx-auto ">
-      <div className="  py-14 px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10">
+    <footer className=" bg-[#0B0E29] text-white w-full max-w-7xl mx-auto ">
+      <div className="  py-14 px-6 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10">
         
         {/* Column 1: Logo & Tagline */}
         <div className="flex flex-col space-y-5">
@@ -29,8 +29,7 @@ const Footer = () => {
           </Link>
           </div>
           <p className="text-sm text-gray-200 leading-relaxed">
-            We believe construction is more than just building structures —
-            it’s about creating comfort, beauty, and durability.
+          Toronto-based exterior contractors specializing in stucco, masonry, siding, and cladding — trusted across Ontario and Canada.
           </p>
 
           {/* Social Media Icons */}
@@ -83,7 +82,7 @@ const Footer = () => {
         </div>
 
         {/* Column 3: Our Services */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold mb-4 tracking-wide">OUR SERVICES</h3>
           <ul className="space-y-4 md:ml-2 text-sm tracking-wide">
             <li className="hover:text-gray-300 transition uppercase">
@@ -107,7 +106,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
 
         {/* Column 4: Contact Info */}

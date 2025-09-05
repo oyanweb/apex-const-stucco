@@ -110,8 +110,7 @@ const Contact = () => {
         <div>
           <p className="text-xs font-semibold uppercase mb-2 text-[#FFAA17] ">Join us</p>
           <h2 className="text-white text-4xl font-bold mb-4">
-            Transforming exteriors, <br />
-            one wall at a time.
+          Start Your Project With Confidence
           </h2>
           <p className="text-white max-w-md">
           Our team combines craftsmanship and modern systems to protect and enhance your building — residential or commercial. 

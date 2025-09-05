@@ -38,7 +38,7 @@ const Contact = dynamic(() => import('./components/Contact'), {
 
 const Home = () => {
   return (
-    <div className="max-w-7xl mx-auto  select-none bg-gradient-to-b from-gray-50 to-gray-100 dark:from-[#111111] dark:to-[#000000] flex flex-col transition-colors duration-300 min-h-screen overflow-hidden relative w-full">
+    <div className="max-w-7xl mx-auto bg-gradient-to-b from-gray-50 to-gray-100 dark:from-[#111111] dark:to-[#000000] flex flex-col transition-colors duration-300 min-h-screen overflow-hidden relative w-full">
       <Hero />
       <About />
       <Services />

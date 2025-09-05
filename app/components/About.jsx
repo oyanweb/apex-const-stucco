@@ -11,7 +11,7 @@ const About = () => {
         <div className="relative w-full lg:w-1/2 hidden md:flex justify-center">
         
           <div className="shadow-[0_0_25px_rgba(0,0,0,0.3)] border-t-6 rounded-lg border-black absolute flex flex-col top-17 left-85 w-27 h-30 bg-[#FFAA17] text-black z-40 flex items-center justify-center font-semibold text-5xl ">
-            10+ <span className="float-left ml-5 font-bold text-sm font-extralight text-sm font-semibold">Years of experience</span>
+            15+ <span className="float-left ml-5 font-bold text-sm font-extralight text-sm font-semibold">Years of experience</span>
           </div>
           <div className="relative flex items-start">
           {/* Image container for overlap */}
@@ -44,56 +44,12 @@ const About = () => {
           Crafting durable, elegant, and energy-efficient exteriors.
           </h2>
           <p className=" text-[var(--primary-text)]  dark:text-gray-300 text-sm sm:text-base tex-gray-300">
-          Your building’s exterior is the first impression — and we make it unforgettable. From stucco and stone to modern cladding systems, our team delivers long-lasting finishes that combine beauty with strength. 
+          We’re not just another contractor. We’re a family business — four brothers united by a commitment to craftsmanship, patience, and trust.
+          Based in Toronto, we’ve built a reputation across Canada for exterior systems that last. From residential homes to large-scale commercial projects, our clients value our hands-on approach, clear communication, and the confidence that comes with our warranty-backed work.
+
           </p>
 
-          {/* Feature boxes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-            {/* Box 1 */}
-            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6 h-30 shadow-md">
-              {/* Icon with orange background */}
-              <div className="relative top-1 flex items-center justify-center w-20 h-14 bg-[#FFAA17]">
-                <img
-                  src="/handcraft.png"
-                  alt="Craftsmanship"
-                  className="w-8 h-8 object-contain"
-                />
-                {/* Vertical accent line */}
-                <span className="absolute -left-3 -top-3 bottom-0 w-1 h-20 bg-[#FFAA17] -ml-3"></span>
-              </div>
-
-              {/* Text */}
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white text-sm">
-                  Quality services
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Construction is a general term meaning the art.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 2 */}
-            <div className="flex items-start gap-4 bg-white dark:bg-gray-800 p-6  h-30 shadow-md">
-              <div className="relative top-1  flex items-center justify-center  w-20 h-14 bg-[#FFAA17]">
-                <img
-                  src="/builder.png"
-                  alt="Developers"
-                  className="w-8 h-8 object-contain"
-                />
-                <span className="absolute -left-3 -top-3 bottom-0 w-1 h-20 bg-[#FFAA17] -ml-3"></span>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white text-sm">
-                  Skilled developers
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Construction is a general term meaning the art.
-                </p>
-              </div>
-            </div>
-          </div>
+          
 
 
           {/* More about us */}

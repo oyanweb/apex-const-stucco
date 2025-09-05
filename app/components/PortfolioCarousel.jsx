@@ -71,10 +71,7 @@ const PortfolioCarousel = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-text)]  dark:text-white mb-4">
           Shaping Exteriors <br />
           That Stand the Test of Time
-          </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mb-6">
-          We bring walls to life with premium stucco, stone, and cladding solutions — designed for durability, beauty, and lasting performance.
-          </p>
+          </h2> 
         </div>
         
         <div>
