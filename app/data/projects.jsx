@@ -4,9 +4,8 @@
         title: "Stucco-Finishes",
         description:
           "We applied a modern stucco finish to the exterior of a two-story family home, creating a clean, durable surface with a smooth texture. The finish not only enhanced curb appeal but also provided long-term weather protection and energy efficiency.",
-        tech: ["Next.js", "Tailwind CSS", "React"],
         link: "https://www.website.com",
-        image: "/project4.jpg",
+        image: "/proj1.jpg",
         category: "STUCCO",  
       },
       {
@@ -14,9 +13,8 @@
         title: "Cladding & Masonry",
         description:
           "We installed contemporary stone cladding and detailed masonry work on a modern office building, blending natural textures with durable finishes. The result was a refined exterior that balanced aesthetics with long-lasting structural strength.",
-        tech: ["React", "Node.js", "Express", "Cloudinary"],
         link: "https://www.website.com",
-        image: "/project3.jpg",
+        image: "/proj2.jpg",
         category: "CLADDING", 
       },
       {
@@ -24,24 +22,77 @@
         title: "Stone & Cladding Solutions",
         description:
           "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
-        tech: [
-          "React",
-          "Node.js",
-          "Supabase",
-          "Drizzle ORM",
-          "Google Calendar API & OAuth",
-          "Clerk",
-          "Nodemailer",
-        ],
         link: "https://www.website.com",
-        image: "/project2.jpg",
+        image: "/proj3.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "cladding-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj4.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "stone-cladding1-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj5.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "stone-cladding2-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj6.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "stone-cladding3-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj7.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "stone-cladding4-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj8.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "stone-cladding5-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj9.jpg",
+        category: "STONE", 
+      },
+      {
+        slug: "stone-cladding7-solutions",
+        title: "Stone & Cladding Solutions",
+        description:
+          "We completed a full exterior upgrade using natural stone veneers and modern cladding panels, giving the property a sleek, upscale look. The combination of durable stonework and contemporary cladding provided both strength and timeless curb appeal.",
+        link: "https://www.website.com",
+        image: "/proj10.jpg",
         category: "STONE", 
       },
     ];
   export default projects;
 
 
-  
 // const projects = [
 //   {
 //     id: 1,
