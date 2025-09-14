@@ -35,9 +35,9 @@ const Navbar = () => {
             href="/"
             className="flex items-start transition-transform duration-300"
           > 
-            <div className="relative w-70 h-50 mt-2 -ml-4 md:ml-6">
+            <div className="relative w-30 h-50 mt-2 -ml-4 md:ml-11 md:mb-3">
               <Image
-                src="/apex_logo5.png"
+                src="/northex_logo.png"
                 alt="Apex Exteriors Logo"
                 fill
                 className="object-contain"

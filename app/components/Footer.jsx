@@ -6,20 +6,20 @@ import { FaWhatsapp, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#0B0E29] text-white w-full max-w-7xl mx-auto ">
+    <footer className=" bg-[#090c1f] text-white w-full max-w-7xl mx-auto ">
       <div className="  py-14 px-6 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10">
         
         {/* Column 1: Logo & Tagline */}
         <div className="flex flex-col space-y-5">
           {/* Logo */}
-          <div className=" -mt-15 md:-ml-8 -mb-5 flex items-start">
+          <div className=" -mt-15 md:-ml-8 -mb-3 flex items-start">
           <Link
             href="/"
             className="flex items-start transition-transform duration-300"
           > 
-            <div className="relative w-50 h-30 mt-2 md:ml-10">
+            <div className="relative w-40 h-30 mt-2 md:ml-10">
               <Image
-                src="/apex_logo_white.png"
+                src="/northex_logo.png"
                 alt="Apex Exteriors Logo"
                 fill
                 className="object-contain"
@@ -113,11 +113,11 @@ const Footer = () => {
         <div className="space-y-5 text-sm">
           <div>
             <p className="text-sm font-thin">Call us:</p>
-            <p className="text-2xl font-semibold">(767) 767-7676</p>
+            <p className="text-2xl font-semibold">+1 (647) 833-2149</p>
           </div>
           <div>
             <p className="text-sm font-thin">Email:</p>
-            <p className="text-xl text-base font-semibold">contact@apexexterior.com</p>
+            <p className="text-xl text-base font-semibold">info@northexltd.ca</p>
           </div>
           <div>
             <p className="text-sm font-thin">Meet us:</p>
@@ -139,7 +139,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="underline hover:text-gray-300"
         >
-          Oyan Web Agency
+          Oyan Studio
         </a>
       </p>
       </div>

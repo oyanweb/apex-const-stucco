@@ -7,21 +7,21 @@ import { useState } from "react";
 const services = [
   {
     id: "01",
-    title: "Exterior Wall Systems",
+    title: "EIFS",
     image: "/ext_walls.webp",
-    description: "Exterior wall systems are the outer shell of a building — everything that makes up the exterior walls beyond just the bricks or siding. They include materials, insulation, air/vapor barriers, and cladding systems."
+    description: "Exterior Insulation & Finish Systems is a modern exterior wall system that combines insulation, weather protection, and a durable finish in one solution. It helps reduce energy costs by keeping buildings warmer in the winter and cooler in the summer, while also offering flexible design options for a clean appearance."
   },
   {
     id: "02",
-    title: "Stucco Finishes",
+    title: "Masonry",
     image: "/stucco.jpg",
-    description: "Stucco is a cement-based plaster applied to exterior (and sometimes interior) walls. It’s made from cement, sand, lime, and water, and is applied in layers over a base (metal lath, concrete, or insulation board)."
+    description: "Masonry is one of the most trusted construction methods, known for its strength, durability, and timeless look. Using stone, brick, or block, we create exteriors that not only protect your building but also add lasting beauty and value."
   },
   {
     id: "03",
-    title: "Stone Veneers & Masonry",
+    title: "Siding",
     image: "/cladding.webp",
-    description: "Stone veneers and masonry involve using natural stone, manufactured stone, or brickwork as part of a building’s exterior or interior design."
+    description: "Siding is a key element in protecting and defining the look of any building. With ACM panels and cladding, we provide exteriors that are durable, low-maintenance, and modern in design."
   },
   {
     id: "04",
@@ -36,7 +36,7 @@ const services = [
     description: "A consultation service is about giving clients expert advice before construction starts — helping them choose the right exterior systems (stucco, cladding, masonry, etc.) based on budget, design goals, building codes, and performance needs."
   },
 ];
-
+ 
 export default function ServicesSection() {
   const [openId, setOpenId] = useState(null);
 
@@ -54,16 +54,15 @@ export default function ServicesSection() {
     >
       {/* Background Image */}
       <div className="relative h-64">
-      <div className="absolute inset-0">
-        <Image
-          src={service.image}
-          alt={service.title}
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
-      </div>
-
+        <div className="absolute inset-0">
+          <Image
+            src={service.image}
+            alt={service.title}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
+        </div>
       </div>
 
       {/* Bottom info bar */}
@@ -83,7 +82,7 @@ export default function ServicesSection() {
       {/* Expandable Description */}
       <div
         className={`overflow-hidden transition-all duration-500 ${
-          openId === service.id ? "max-h-40 p-4 bg-white/80" : "max-h-0"
+          openId === service.id ? "max-h-50 -mt-4 p-4 bg-white/80" : "max-h-0"
         }`}
       >
         <p className="text-gray-700 text-sm">{service.description}</p>
