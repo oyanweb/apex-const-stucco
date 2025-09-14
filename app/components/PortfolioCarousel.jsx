@@ -17,7 +17,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/project4.jpg",
+      image: "/proj1.jpg",
       tag: "Design",
     },
     {
@@ -25,7 +25,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/project3.jpg",
+      image: "/proj2.jpg",
       tag: "Design",
     },
     {
@@ -33,7 +33,7 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/project2.jpg",
+      image: "/proj3.jpg",
       tag: "Design",
     },
     {
@@ -41,7 +41,55 @@ const PortfolioCarousel = () => {
       description:
         "Another innovative project description goes here for demo purposes.",
       link: "#",
-      image: "/project1.jpg",
+      image: "/proj4.jpg",
+      tag: "Design",
+    },
+    {
+      title: "Sample Project",
+      description:
+        "Another innovative project description goes here for demo purposes.",
+      link: "#",
+      image: "/proj5.jpg",
+      tag: "Design",
+    },
+    {
+      title: "Sample Project",
+      description:
+        "Another innovative project description goes here for demo purposes.",
+      link: "#",
+      image: "/proj6.jpg",
+      tag: "Design",
+    },
+    {
+      title: "Sample Project",
+      description:
+        "Another innovative project description goes here for demo purposes.",
+      link: "#",
+      image: "/proj7.jpg",
+      tag: "Design",
+    },
+    {
+      title: "Sample Project",
+      description:
+        "Another innovative project description goes here for demo purposes.",
+      link: "#",
+      image: "/proj8.jpg",
+      tag: "Design",
+    },
+    {
+      title: "Sample Project",
+      description:
+        "Another innovative project description goes here for demo purposes.",
+      link: "#",
+      image: "/proj9.jpg",
+      tag: "Design",
+    },
+    {
+      title: "Sample Project",
+      description:
+        "Another innovative project description goes here for demo purposes.",
+      link: "#",
+      image: "/proj10.jpg",
       tag: "Design",
     },
   ];
